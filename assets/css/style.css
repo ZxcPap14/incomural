@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    background-color: #FCFCFC;
+    font-family: inter;
+}
+
+#up_header1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#header1 {
+    display: flex;
+    width: 80%;
+    height: 12vh;
+    align-items: center;
+    border-bottom: 0.1vh solid;
+    border-color: lightgray;
+    justify-content: space-between;
+}
+
+.logo_and_text {
+    width: 10%;
+    height: 10vh;
+    background-image: url('/assets/img/logo_final.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#o_nas_niz_qwe_left_logo {
+    width: 600px;
+    background-image: url('/assets/img/Logo_text_final.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+#header_center {
+
+    align-items: center;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header_center input {
+    width: 80%;
+    height: 5vh;
+    font-weight: 500;
+    font-size: 1.6vh;
+    background-color: #F0F0F0;
+    border-radius: 1.4vh;
+    border: 0;
+    box-sizing: border-box;
+    padding: 1.2vh;
+}
+
+
+#header_center h1 {
+    font-size: medium;
+    text-align: center;
+}
+
+#karzina_zxc {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#osnova {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#right_osnova {
+    width: 50vw;
+    background-image: url("/assets/img/vrem.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#top {
+    margin-top: 1vh;
+    justify-content: center;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.box-category {
+    text-align: center;
+    display: flex;
+    width: 27vh;
+    height: 7vh;
+    border: 0.1vh solid;
+    border-color: lightgray;
+    border-radius: 0.7vh;
+    background-color: white;
+    margin-bottom: 1.2vh;
+}
+
+.right_box h3 {
+    align-items: center;
+    display: flex;
+    margin-right: 0.7vh;
+    font-weight: 400;
+    background-color: white;
+    font-size: 1.5vh;
+}
+
+.left_box {
+    border-radius: 1vh;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.left_box img {
+
+    z-index: 1;
+
+}
+
+.right_box {
+    display: flex;
+    width: 70%;
+    align-self: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.karzina_text_zxc {
+    margin: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 2vh;
+    font-weight: 400;
+}
+
+.rezdel_polosa_under_osnova {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    width: 80%;
+    border: none;
+    color: #DFDFDF;
+    background-color: #DFDFDF;
+    height: 0.15vh;
+}
+
+.o_nas_niz_qwe {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.o_nas_niz_qwe_80 {
+    width: 70%;
+
+    display: flex;
+}
+
+.o_nas_niz_qwe_80_2 {
+    width: 70%;
+
+    display: flex;
+}
+
+#o_nas_niz_qwe_left_logo img {
+    width: 10vw;
+}
+
+.o_nas_niz_qwe2 {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-device-width: 1280px) {
+    .o_nas_niz_qwe_right_text p {
+        font-size: smaller;
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2560) {
+    .o_nas_niz_qwe_right_text p {
+        font-size: medium;
+    }
+}
+
+.product_card {
+    border: 1px solid;
+    width: 200px;
+    height: 300px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 25%;
+}
+
+.product_card img {
+    height: 70%;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#authModal {
+    background-color: rgba(0, 0, 0, 0.01) !important;
+    backdrop-filter: blur(0.7px);
+}
+
+#authModal2 {
+    background-color: rgba(0, 0, 0, 0.01) !important;
+    backdrop-filter: blur(0.7px);
+}
+
+.modal-content {
+    border-radius: 20vh;
+}
+
+.hide_button_zxc {
+    display: none;
+}
+
+.img_cartochka {
+    width: 70px;
+}
+
+.center_admin {
+    display: flex;
+    width: 100%;
+}
+
+.left_admin {
+    width: 30%;
+    background-color: rebeccapurple;
+    padding: 10px;  
+}
+.left_admin button {
+    width: 200px;
+    height: 60px;
+    font-size: larger;
+
+}
+#fontain{
+    display: none;
+}
+#Purifayer{
+    display: none;
+}
+.right_admin {
+    background-color: aqua;
+    width: 70%;
+}
+.hidden {
+    display: none;
+}
