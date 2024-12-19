@@ -34,6 +34,10 @@ session_start();
 </head>
 
 <body>
+<?php
+    include_once("assets/php/connect.php");
+    include_once("assets/page/header/head.php");
+    ?>
     <div class="container">
         <h1>Корзина</h1>
 
