@@ -133,7 +133,8 @@
 <body>
 
     <?php
-    include_once("assets/php/connect.php"); ?>
+    include_once("assets/php/connect.php"); 
+    include_once("assets/page/header/head.php");?>
     <div class="container">
         <div class="image-section">
             <img src="assets\img\gaz_voda\gaz_voda1.jpg" alt="Product Image">
@@ -233,7 +234,9 @@
 
 
 
-    
+    <div>
+    <?php include_once("assets/page/footer/footer.php"); ?>
+    </div>
 </body>
 
 </html>

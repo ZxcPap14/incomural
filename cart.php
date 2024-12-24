@@ -5,9 +5,8 @@ session_start();
 <html lang="ru">
 
 <head>
-        <meta charset="UTF-8">
-
-    <link rel="stylesheet" type="text/css" href="../assets\css\style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="../assets/img/logo.svg">
     <title>Корзина</title>
     <style>
@@ -137,6 +136,9 @@ session_start();
         });
     </script>
 </script>
+<div>
+    <?php include_once("assets/page/footer/footer.php"); ?>
+    </div>
 </body>
 
 </html>

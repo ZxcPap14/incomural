@@ -16,6 +16,7 @@ if (!$connect) {
         $height = $_POST['Height'];
         $weight = $_POST['Weight'];
         $filter = $_POST['Filter'];
+        $mat = $_POST['materiall'];
         $performance = $_POST['Performance'];
         $img = $_FILES['img_path']['name'];
         $img_full_path = "assets/img/img_tovar/" . $img;
@@ -50,8 +51,8 @@ if (!$connect) {
         }
 
         // Вставляем данные в таблицу Fountains
-        $sql1 = "INSERT INTO Fountains (Name, Price, gabarit_Length, gabarit_Width, gabarit_Height, Weight, Filter, Performance, Сooling, img)
-VALUES ('$name', '$price', '$length', '$width', '$height', '$weight', '$filter', '$performance', '$cooling', '$img_full_path')";
+        $sql1 = "INSERT INTO Fountains (Name, Price, gabarit_Length, gabarit_Width, gabarit_Height, Weight, Filter, Performance, Сooling, img , material)
+VALUES ('$name', '$price', '$length', '$width', '$height', '$weight', '$filter', '$performance', '$cooling', '$img_full_path', '$mat')";
 
         if ($connect->query($sql1) === TRUE) {
             $fountain_id = $connect->insert_id; // Получаем ID только что добавленной записи

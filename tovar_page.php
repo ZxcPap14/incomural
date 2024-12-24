@@ -421,7 +421,9 @@
 
 
 
-
+    <div>
+    <?php include_once("assets/page/footer/footer.php"); ?>
+    </div>
 </body>
 
 </html>
