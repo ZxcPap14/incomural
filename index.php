@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Инженерная компания</title>
@@ -14,6 +15,23 @@
 </head>
 
 <body>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(99296430, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/99296430" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
     <?php
     include_once("assets/page/header/head.php");
     ?>
@@ -21,7 +39,8 @@
         <div id="top">
             <div id="left_osnova">
 
-                <div class="box-category">
+                <div class="box-category"
+                onclick="location.href='../apparat_gaz_voda.php';">
                     <div class="left_box">
                         <img src="assets/img/category/1.png">
                     </div>
@@ -83,9 +102,7 @@
     </div>
     <div class="o_nas_niz_qwe">
         <div class="o_nas_niz_qwe_80">
-            <a href="http://incomural/katalog.php/">
                 <h2>О нас</h2>
-            </a>
         </div>
     </div>
     <div class="rezdel_polosa_under_osnova">

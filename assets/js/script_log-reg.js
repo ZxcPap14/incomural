@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    document.getElementById('loginForm').addEventListener('submit', function (e) {
+       document.getElementById('loginForm').addEventListener('submit', function (e) {
         e.preventDefault();
         var formData = new FormData(this);
         fetch('../assets/php/process-login.php', {
@@ -58,14 +58,16 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log('Ответ сервера:', response);
             
             // Проверка HTTP-статусов
-            if (response.status === 200) {
+            if (response.status === 123) {
                 console.log('Статус OK');
             } else if (response.status === 401) {
                 console.log('Неверный логин или пароль');
             }
             else if(response.status === 228){
                 console.log('erwerwerwerwerwerwerwer');
-
+            }
+            else{
+                console.log(response.status);
             }
             
             // Обработка JSON-ответа
@@ -81,10 +83,10 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => {
             console.error('Произошла ошибка:', error);
         });
-        
-    
         document.location.reload();
+    
     });
+
 
     document.getElementById('registerForm').addEventListener('submit', function (e) {
         e.preventDefault();
@@ -93,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
             method: 'POST',
             body: formData
         })
-        //document.location.reload();
+        document.location.reload();
     });
 
     // Закрытие модального окна

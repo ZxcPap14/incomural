@@ -20,5 +20,4 @@ document.getElementById('registerForms2').addEventListener('submit', function (e
         }
         console.log(data); // Для отладки
     })
-    .catch(error => console.error('Ошибка:', error));
 });

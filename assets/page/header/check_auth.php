@@ -1,10 +1,12 @@
 <?php
-session_start();
 
+session_start();
 // Функция для вывода формы авторизации/регистрации
 function showAuthForm($isRegister = false)
 {
     echo '
+    <script src="assets\js\script_log-reg.js"></script>
+
   <div class="modal" id="authModal">
     <div class="modal-content">
     <form action="" method="post" id="loginForm">
@@ -30,6 +32,7 @@ function showAuthForm($isRegister = false)
 
 // Вывод формы авторизации/регистрации
 if (isset($_SESSION["login"])) {
+  
     echo "Привет, " . $_SESSION["login"];
     echo '
   <div id="log_out">
@@ -38,14 +41,14 @@ if (isset($_SESSION["login"])) {
     </form>
   </div>
   
-  <script src="../assets/js/logout-script.js"></script>
+  <script src="assets/js/logout-script.js"></script>
   ';
 } else {
+  
     showAuthForm();
 }
 
 ?>
-<script src="../assets\js\script_log-reg.js"></script>
 <style>
     .modal {
         display: none;
@@ -86,4 +89,4 @@ if (isset($_SESSION["login"])) {
 </style>
 
 
-<button id="authButton" style="    display: none;">Войти</button>
+<button id="authButton" style="display: none;">Войти</button>

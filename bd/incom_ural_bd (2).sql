@@ -36,7 +36,7 @@ CREATE TABLE `dop_for_fountains` (
   `Crane_Gusak` int NOT NULL,
   `Reverse_Osmosis` int NOT NULL,
   `filtration_system` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Дамп данных таблицы `dop_for_fountains`
@@ -93,7 +93,7 @@ CREATE TABLE `Fountains_coling_gaz` (
   `Power_consumption` varchar(255) NOT NULL,
   `Operating_temperature` varchar(255) NOT NULL,
   `Chilled_water_temperature` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Дамп данных таблицы `Fountains_coling_gaz`
@@ -130,7 +130,7 @@ CREATE TABLE `NapolyevPurifayer_RO` (
   `gabarit_Length` int NOT NULL,
   `gabarit_Width` int NOT NULL,
   `gabarit_Height` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -159,7 +159,7 @@ CREATE TABLE `NapolyevPurifayer_uv` (
   `gabarit_Length` int NOT NULL,
   `gabarit_Width` int NOT NULL,
   `gabarit_Height` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -188,7 +188,7 @@ CREATE TABLE `NastolPurifayer_RO` (
   `gabarit_Length` int NOT NULL,
   `gabarit_Width` int NOT NULL,
   `gabarit_Height` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -217,7 +217,7 @@ CREATE TABLE `NastolPurifayer_uv` (
   `gabarit_Length` int NOT NULL,
   `gabarit_Width` int NOT NULL,
   `gabarit_Height` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -230,7 +230,7 @@ CREATE TABLE `remember_tokens` (
   `user_id` int NOT NULL,
   `token` varchar(64) NOT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Дамп данных таблицы `remember_tokens`
@@ -255,7 +255,7 @@ CREATE TABLE `Users` (
   `password` varchar(255) NOT NULL,
   `mail` varchar(255) NOT NULL,
   `role` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Дамп данных таблицы `Users`

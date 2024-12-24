@@ -25,7 +25,7 @@
 .logo_and_text {
     width: 10%;
     height: 10vh;
-    background-image: url('/assets/img/logo_final.svg');
+    background-image: url('../img/logo_final.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
